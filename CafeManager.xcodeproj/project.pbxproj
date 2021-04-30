@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111FB780263C500400731038 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111FB77F263C500400731038 /* MenuViewController.swift */; };
+		111FB78F263C53E500731038 /* CategoryInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111FB78D263C53E500731038 /* CategoryInfoTableViewCell.swift */; };
+		111FB790263C53E500731038 /* CategoryInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111FB78E263C53E500731038 /* CategoryInfoTableViewCell.xib */; };
 		1AF137D0263BC49F00E35754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF137CF263BC49F00E35754 /* AppDelegate.swift */; };
 		1AF137D2263BC49F00E35754 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF137D1263BC49F00E35754 /* SceneDelegate.swift */; };
 		1AF137D7263BC49F00E35754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF137D5263BC49F00E35754 /* Main.storyboard */; };
@@ -24,7 +27,6 @@
 		1AF13815263C02F500E35754 /* StoreRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF13814263C02F500E35754 /* StoreRootViewController.swift */; };
 		1AF13817263C184B00E35754 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF13816263C184B00E35754 /* PreviewViewController.swift */; };
 		1AF13819263C186A00E35754 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF13818263C186900E35754 /* CategoryViewController.swift */; };
-		1AF1381B263C188100E35754 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1381A263C188100E35754 /* MainViewController.swift */; };
 		1AF1381E263C18A800E35754 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1381D263C18A800E35754 /* AccountViewController.swift */; };
 		1AF13821263C18EA00E35754 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF13820263C18EA00E35754 /* OrderViewController.swift */; };
 		4967163420EEA0E4A09DE0C5 /* Pods_CafeManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BEEB0EB9EEB28BD6818BEC /* Pods_CafeManager.framework */; };
@@ -50,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		111FB77F263C500400731038 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		111FB78D263C53E500731038 /* CategoryInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfoTableViewCell.swift; sourceTree = "<group>"; };
+		111FB78E263C53E500731038 /* CategoryInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryInfoTableViewCell.xib; sourceTree = "<group>"; };
 		17DF67AA3F9E358B1EEBCF3A /* Pods_CafeManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF137CC263BC49F00E35754 /* CafeManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF137CF263BC49F00E35754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +79,6 @@
 		1AF13814263C02F500E35754 /* StoreRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRootViewController.swift; sourceTree = "<group>"; };
 		1AF13816263C184B00E35754 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		1AF13818263C186900E35754 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
-		1AF1381A263C188100E35754 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1AF1381D263C18A800E35754 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		1AF13820263C18EA00E35754 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		575C0BD075E5AEFB64259337 /* Pods-CafeManager-CafeManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager-CafeManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-CafeManager-CafeManagerUITests/Pods-CafeManager-CafeManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		111FB784263C528100731038 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				111FB78D263C53E500731038 /* CategoryInfoTableViewCell.swift */,
+				111FB78E263C53E500731038 /* CategoryInfoTableViewCell.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
 		1AF137C3263BC49E00E35754 = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +209,7 @@
 		1AF13801263BC4F300E35754 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				111FB784263C528100731038 /* XIB */,
 				1AF137D5263BC49F00E35754 /* Main.storyboard */,
 			);
 			path = View;
@@ -216,7 +230,7 @@
 				1AF13814263C02F500E35754 /* StoreRootViewController.swift */,
 				1AF13816263C184B00E35754 /* PreviewViewController.swift */,
 				1AF13818263C186900E35754 /* CategoryViewController.swift */,
-				1AF1381A263C188100E35754 /* MainViewController.swift */,
+				111FB77F263C500400731038 /* MenuViewController.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -371,6 +385,7 @@
 			files = (
 				1AF137DC263BC4A600E35754 /* LaunchScreen.storyboard in Resources */,
 				1AF137D9263BC4A600E35754 /* Assets.xcassets in Resources */,
+				111FB790263C53E500731038 /* CategoryInfoTableViewCell.xib in Resources */,
 				1AF13803263BD4FD00E35754 /* GoogleService-Info.plist in Resources */,
 				1AF137D7263BC49F00E35754 /* Main.storyboard in Resources */,
 			);
@@ -501,11 +516,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AF1380E263BEFD100E35754 /* SignUpViewController.swift in Sources */,
+				111FB78F263C53E500731038 /* CategoryInfoTableViewCell.swift in Sources */,
 				1AF1380C263BDFE100E35754 /* InputValidator.swift in Sources */,
 				1AF1381E263C18A800E35754 /* AccountViewController.swift in Sources */,
+				111FB780263C500400731038 /* MenuViewController.swift in Sources */,
 				1AF13821263C18EA00E35754 /* OrderViewController.swift in Sources */,
 				1AF13815263C02F500E35754 /* StoreRootViewController.swift in Sources */,
-				1AF1381B263C188100E35754 /* MainViewController.swift in Sources */,
 				1AF13817263C184B00E35754 /* PreviewViewController.swift in Sources */,
 				1AF137D0263BC49F00E35754 /* AppDelegate.swift in Sources */,
 				1AF137D2263BC49F00E35754 /* SceneDelegate.swift in Sources */,
