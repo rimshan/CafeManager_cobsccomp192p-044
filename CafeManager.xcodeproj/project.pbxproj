@@ -30,6 +30,8 @@
 		1AF1381E263C18A800E35754 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1381D263C18A800E35754 /* AccountViewController.swift */; };
 		1AF13821263C18EA00E35754 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF13820263C18EA00E35754 /* OrderViewController.swift */; };
 		4967163420EEA0E4A09DE0C5 /* Pods_CafeManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BEEB0EB9EEB28BD6818BEC /* Pods_CafeManager.framework */; };
+		691727F2263C5FEC00B905FE /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691727F0263C5FEC00B905FE /* CategoryCollectionViewCell.swift */; };
+		691727F3263C5FEC00B905FE /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691727F1263C5FEC00B905FE /* CategoryCollectionViewCell.xib */; };
 		82674F82A19EADECE7027C69 /* Pods_CafeManager_CafeManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8E064125F83BF904E7C10C /* Pods_CafeManager_CafeManagerUITests.framework */; };
 		E671A72628415DDC9DA0F692 /* Pods_CafeManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DF67AA3F9E358B1EEBCF3A /* Pods_CafeManagerTests.framework */; };
 /* End PBXBuildFile section */
@@ -84,6 +86,8 @@
 		575C0BD075E5AEFB64259337 /* Pods-CafeManager-CafeManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager-CafeManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-CafeManager-CafeManagerUITests/Pods-CafeManager-CafeManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		66193D7552DD60D7F8D49612 /* Pods-CafeManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-CafeManagerTests/Pods-CafeManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		671D19EC791AEDC8D2785AA3 /* Pods-CafeManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager.release.xcconfig"; path = "Target Support Files/Pods-CafeManager/Pods-CafeManager.release.xcconfig"; sourceTree = "<group>"; };
+		691727F0263C5FEC00B905FE /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		691727F1263C5FEC00B905FE /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		7EB4EACDE62E3246098312E4 /* Pods-CafeManager-CafeManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager-CafeManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CafeManager-CafeManagerUITests/Pods-CafeManager-CafeManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		99BB1B016EDCAC33A6059319 /* Pods-CafeManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager.debug.xcconfig"; path = "Target Support Files/Pods-CafeManager/Pods-CafeManager.debug.xcconfig"; sourceTree = "<group>"; };
 		E3BEEB0EB9EEB28BD6818BEC /* Pods_CafeManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +128,8 @@
 			children = (
 				111FB78D263C53E500731038 /* CategoryInfoTableViewCell.swift */,
 				111FB78E263C53E500731038 /* CategoryInfoTableViewCell.xib */,
+				691727F0263C5FEC00B905FE /* CategoryCollectionViewCell.swift */,
+				691727F1263C5FEC00B905FE /* CategoryCollectionViewCell.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -347,6 +353,7 @@
 				TargetAttributes = {
 					1AF137CB263BC49F00E35754 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1240;
 					};
 					1AF137E1263BC4A600E35754 = {
 						CreatedOnToolsVersion = 11.5;
@@ -383,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691727F3263C5FEC00B905FE /* CategoryCollectionViewCell.xib in Resources */,
 				1AF137DC263BC4A600E35754 /* LaunchScreen.storyboard in Resources */,
 				1AF137D9263BC4A600E35754 /* Assets.xcassets in Resources */,
 				111FB790263C53E500731038 /* CategoryInfoTableViewCell.xib in Resources */,
@@ -515,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691727F2263C5FEC00B905FE /* CategoryCollectionViewCell.swift in Sources */,
 				1AF1380E263BEFD100E35754 /* SignUpViewController.swift in Sources */,
 				111FB78F263C53E500731038 /* CategoryInfoTableViewCell.swift in Sources */,
 				1AF1380C263BDFE100E35754 /* InputValidator.swift in Sources */,
@@ -703,6 +712,7 @@
 			baseConfigurationReference = 99BB1B016EDCAC33A6059319 /* Pods-CafeManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CafeManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -711,6 +721,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Rimshan.CafeManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -721,6 +732,7 @@
 			baseConfigurationReference = 671D19EC791AEDC8D2785AA3 /* Pods-CafeManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CafeManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

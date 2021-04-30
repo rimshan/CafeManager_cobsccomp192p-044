@@ -410,26 +410,47 @@
         <!--Item 1-->
         <scene sceneID="cj2-7K-HGY">
             <objects>
-                <viewController id="fZ2-UL-OzW" sceneMemberID="viewController">
+                <viewController id="fZ2-UL-OzW" customClass="PreviewViewController" customModule="CafeManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oN6-4c-1lw">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="537"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XQN-va-9Yj">
-                                <rect key="frame" x="10" y="30" width="315" height="448"/>
+                                <rect key="frame" x="10" y="50" width="315" height="428"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ncx-Vk-Mdu">
+                                <rect key="frame" x="10" y="10" width="315" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ffr-Ey-XDI"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RuL-Ua-ZBd">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8vG-7l-cI0"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="XQN-va-9Yj" firstAttribute="top" secondItem="8vG-7l-cI0" secondAttribute="top" constant="30" id="7Ts-Qe-Xcl"/>
-                            <constraint firstItem="8vG-7l-cI0" firstAttribute="bottom" secondItem="XQN-va-9Yj" secondAttribute="bottom" constant="10" id="NXo-qt-MBm"/>
-                            <constraint firstItem="8vG-7l-cI0" firstAttribute="trailing" secondItem="XQN-va-9Yj" secondAttribute="trailing" constant="10" id="hPP-O6-UL4"/>
-                            <constraint firstItem="XQN-va-9Yj" firstAttribute="leading" secondItem="8vG-7l-cI0" secondAttribute="leading" constant="10" id="wMh-rw-Z8z"/>
+                            <constraint firstItem="8vG-7l-cI0" firstAttribute="bottom" secondItem="XQN-va-9Yj" secondAttribute="bottom" constant="10" id="2d8-SW-phV"/>
+                            <constraint firstItem="8vG-7l-cI0" firstAttribute="trailing" secondItem="Ncx-Vk-Mdu" secondAttribute="trailing" constant="10" id="5nt-V9-78N"/>
+                            <constraint firstItem="8vG-7l-cI0" firstAttribute="trailing" secondItem="XQN-va-9Yj" secondAttribute="trailing" constant="10" id="7U1-Rs-AOd"/>
+                            <constraint firstItem="XQN-va-9Yj" firstAttribute="top" secondItem="Ncx-Vk-Mdu" secondAttribute="bottom" constant="10" id="QHQ-al-abt"/>
+                            <constraint firstItem="Ncx-Vk-Mdu" firstAttribute="leading" secondItem="8vG-7l-cI0" secondAttribute="leading" constant="10" id="R5i-en-OZy"/>
+                            <constraint firstItem="Ncx-Vk-Mdu" firstAttribute="top" secondItem="oN6-4c-1lw" secondAttribute="top" constant="10" id="gFr-Nd-C6R"/>
+                            <constraint firstItem="XQN-va-9Yj" firstAttribute="leading" secondItem="8vG-7l-cI0" secondAttribute="leading" constant="10" id="zdH-1l-OLJ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="mgw-Wq-A9J"/>
+                    <connections>
+                        <outlet property="collectionViewCategories" destination="Ncx-Vk-Mdu" id="mkL-mb-ucH"/>
+                        <outlet property="tblFoodItems" destination="XQN-va-9Yj" id="kB7-iu-We0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KcU-dl-Azq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
