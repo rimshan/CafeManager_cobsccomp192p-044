@@ -32,6 +32,12 @@
 		4967163420EEA0E4A09DE0C5 /* Pods_CafeManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BEEB0EB9EEB28BD6818BEC /* Pods_CafeManager.framework */; };
 		691727F2263C5FEC00B905FE /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691727F0263C5FEC00B905FE /* CategoryCollectionViewCell.swift */; };
 		691727F3263C5FEC00B905FE /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691727F1263C5FEC00B905FE /* CategoryCollectionViewCell.xib */; };
+		691727F9263C65B500B905FE /* FoodItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691727F7263C65B500B905FE /* FoodItemTableViewCell.swift */; };
+		691727FA263C65B500B905FE /* FoodItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691727F8263C65B500B905FE /* FoodItemTableViewCell.xib */; };
+		69172800263C71EA00B905FE /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691727FE263C71EA00B905FE /* OrderTableViewCell.swift */; };
+		69172801263C71EA00B905FE /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691727FF263C71EA00B905FE /* OrderTableViewCell.xib */; };
+		69172807263C77D100B905FE /* OrderSummeryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69172805263C77D100B905FE /* OrderSummeryTableViewCell.swift */; };
+		69172808263C77D100B905FE /* OrderSummeryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69172806263C77D100B905FE /* OrderSummeryTableViewCell.xib */; };
 		82674F82A19EADECE7027C69 /* Pods_CafeManager_CafeManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8E064125F83BF904E7C10C /* Pods_CafeManager_CafeManagerUITests.framework */; };
 		E671A72628415DDC9DA0F692 /* Pods_CafeManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DF67AA3F9E358B1EEBCF3A /* Pods_CafeManagerTests.framework */; };
 /* End PBXBuildFile section */
@@ -88,6 +94,12 @@
 		671D19EC791AEDC8D2785AA3 /* Pods-CafeManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager.release.xcconfig"; path = "Target Support Files/Pods-CafeManager/Pods-CafeManager.release.xcconfig"; sourceTree = "<group>"; };
 		691727F0263C5FEC00B905FE /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		691727F1263C5FEC00B905FE /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		691727F7263C65B500B905FE /* FoodItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTableViewCell.swift; sourceTree = "<group>"; };
+		691727F8263C65B500B905FE /* FoodItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodItemTableViewCell.xib; sourceTree = "<group>"; };
+		691727FE263C71EA00B905FE /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		691727FF263C71EA00B905FE /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		69172805263C77D100B905FE /* OrderSummeryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummeryTableViewCell.swift; sourceTree = "<group>"; };
+		69172806263C77D100B905FE /* OrderSummeryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderSummeryTableViewCell.xib; sourceTree = "<group>"; };
 		7EB4EACDE62E3246098312E4 /* Pods-CafeManager-CafeManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager-CafeManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CafeManager-CafeManagerUITests/Pods-CafeManager-CafeManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		99BB1B016EDCAC33A6059319 /* Pods-CafeManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager.debug.xcconfig"; path = "Target Support Files/Pods-CafeManager/Pods-CafeManager.debug.xcconfig"; sourceTree = "<group>"; };
 		E3BEEB0EB9EEB28BD6818BEC /* Pods_CafeManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +142,12 @@
 				111FB78E263C53E500731038 /* CategoryInfoTableViewCell.xib */,
 				691727F0263C5FEC00B905FE /* CategoryCollectionViewCell.swift */,
 				691727F1263C5FEC00B905FE /* CategoryCollectionViewCell.xib */,
+				691727F7263C65B500B905FE /* FoodItemTableViewCell.swift */,
+				691727F8263C65B500B905FE /* FoodItemTableViewCell.xib */,
+				691727FE263C71EA00B905FE /* OrderTableViewCell.swift */,
+				691727FF263C71EA00B905FE /* OrderTableViewCell.xib */,
+				69172805263C77D100B905FE /* OrderSummeryTableViewCell.swift */,
+				69172806263C77D100B905FE /* OrderSummeryTableViewCell.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -392,10 +410,13 @@
 			files = (
 				691727F3263C5FEC00B905FE /* CategoryCollectionViewCell.xib in Resources */,
 				1AF137DC263BC4A600E35754 /* LaunchScreen.storyboard in Resources */,
+				691727FA263C65B500B905FE /* FoodItemTableViewCell.xib in Resources */,
 				1AF137D9263BC4A600E35754 /* Assets.xcassets in Resources */,
 				111FB790263C53E500731038 /* CategoryInfoTableViewCell.xib in Resources */,
 				1AF13803263BD4FD00E35754 /* GoogleService-Info.plist in Resources */,
+				69172801263C71EA00B905FE /* OrderTableViewCell.xib in Resources */,
 				1AF137D7263BC49F00E35754 /* Main.storyboard in Resources */,
+				69172808263C77D100B905FE /* OrderSummeryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,9 +547,11 @@
 				691727F2263C5FEC00B905FE /* CategoryCollectionViewCell.swift in Sources */,
 				1AF1380E263BEFD100E35754 /* SignUpViewController.swift in Sources */,
 				111FB78F263C53E500731038 /* CategoryInfoTableViewCell.swift in Sources */,
+				69172807263C77D100B905FE /* OrderSummeryTableViewCell.swift in Sources */,
 				1AF1380C263BDFE100E35754 /* InputValidator.swift in Sources */,
 				1AF1381E263C18A800E35754 /* AccountViewController.swift in Sources */,
 				111FB780263C500400731038 /* MenuViewController.swift in Sources */,
+				69172800263C71EA00B905FE /* OrderTableViewCell.swift in Sources */,
 				1AF13821263C18EA00E35754 /* OrderViewController.swift in Sources */,
 				1AF13815263C02F500E35754 /* StoreRootViewController.swift in Sources */,
 				1AF13817263C184B00E35754 /* PreviewViewController.swift in Sources */,
@@ -537,6 +560,7 @@
 				1AF13809263BDF2D00E35754 /* EntityModel.swift in Sources */,
 				1AF13807263BDAE500E35754 /* SignInViewController.swift in Sources */,
 				1AF13810263BF2C200E35754 /* SessionManager.swift in Sources */,
+				691727F9263C65B500B905FE /* FoodItemTableViewCell.swift in Sources */,
 				1AF13819263C186A00E35754 /* CategoryViewController.swift in Sources */,
 				1AF13812263BF93D00E35754 /* LaunchViewController.swift in Sources */,
 			);
