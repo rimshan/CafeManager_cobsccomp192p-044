@@ -73,7 +73,7 @@ class SignInViewController: UIViewController {
                         userPhone: userdata["userPhone"]!)
                         let sessionMGR = SessionManager()
                         sessionMGR.saveUserLogin(user: user)
-                        //self.performSegue(withIdentifier: "SignInToHome", sender: nil)
+                        self.performSegue(withIdentifier: "SignInToHome", sender: nil)
                     }
                 }
             }else{

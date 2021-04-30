@@ -20,6 +20,13 @@
 		1AF1380C263BDFE100E35754 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1380B263BDFE100E35754 /* InputValidator.swift */; };
 		1AF1380E263BEFD100E35754 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1380D263BEFD100E35754 /* SignUpViewController.swift */; };
 		1AF13810263BF2C200E35754 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1380F263BF2C200E35754 /* SessionManager.swift */; };
+		1AF13812263BF93D00E35754 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF13811263BF93D00E35754 /* LaunchViewController.swift */; };
+		1AF13815263C02F500E35754 /* StoreRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF13814263C02F500E35754 /* StoreRootViewController.swift */; };
+		1AF13817263C184B00E35754 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF13816263C184B00E35754 /* PreviewViewController.swift */; };
+		1AF13819263C186A00E35754 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF13818263C186900E35754 /* CategoryViewController.swift */; };
+		1AF1381B263C188100E35754 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1381A263C188100E35754 /* MainViewController.swift */; };
+		1AF1381E263C18A800E35754 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1381D263C18A800E35754 /* AccountViewController.swift */; };
+		1AF13821263C18EA00E35754 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF13820263C18EA00E35754 /* OrderViewController.swift */; };
 		4967163420EEA0E4A09DE0C5 /* Pods_CafeManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BEEB0EB9EEB28BD6818BEC /* Pods_CafeManager.framework */; };
 		82674F82A19EADECE7027C69 /* Pods_CafeManager_CafeManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8E064125F83BF904E7C10C /* Pods_CafeManager_CafeManagerUITests.framework */; };
 		E671A72628415DDC9DA0F692 /* Pods_CafeManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DF67AA3F9E358B1EEBCF3A /* Pods_CafeManagerTests.framework */; };
@@ -63,6 +70,13 @@
 		1AF1380B263BDFE100E35754 /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
 		1AF1380D263BEFD100E35754 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1AF1380F263BF2C200E35754 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		1AF13811263BF93D00E35754 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		1AF13814263C02F500E35754 /* StoreRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRootViewController.swift; sourceTree = "<group>"; };
+		1AF13816263C184B00E35754 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		1AF13818263C186900E35754 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		1AF1381A263C188100E35754 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1AF1381D263C18A800E35754 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		1AF13820263C18EA00E35754 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		575C0BD075E5AEFB64259337 /* Pods-CafeManager-CafeManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager-CafeManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-CafeManager-CafeManagerUITests/Pods-CafeManager-CafeManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		66193D7552DD60D7F8D49612 /* Pods-CafeManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-CafeManagerTests/Pods-CafeManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		671D19EC791AEDC8D2785AA3 /* Pods-CafeManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager.release.xcconfig"; path = "Target Support Files/Pods-CafeManager/Pods-CafeManager.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,8 +183,12 @@
 		1AF13800263BC4E400E35754 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1AF1381F263C18D800E35754 /* Order */,
+				1AF1381C263C189000E35754 /* Account */,
+				1AF13813263C02BF00E35754 /* Store */,
 				1AF13806263BDAE500E35754 /* SignInViewController.swift */,
 				1AF1380D263BEFD100E35754 /* SignUpViewController.swift */,
+				1AF13811263BF93D00E35754 /* LaunchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,6 +208,33 @@
 				1AF1380F263BF2C200E35754 /* SessionManager.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		1AF13813263C02BF00E35754 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				1AF13814263C02F500E35754 /* StoreRootViewController.swift */,
+				1AF13816263C184B00E35754 /* PreviewViewController.swift */,
+				1AF13818263C186900E35754 /* CategoryViewController.swift */,
+				1AF1381A263C188100E35754 /* MainViewController.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		1AF1381C263C189000E35754 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				1AF1381D263C18A800E35754 /* AccountViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		1AF1381F263C18D800E35754 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				1AF13820263C18EA00E35754 /* OrderViewController.swift */,
+			);
+			path = Order;
 			sourceTree = "<group>";
 		};
 		574638311F06FC5F4730D73A /* Pods */ = {
@@ -457,11 +502,18 @@
 			files = (
 				1AF1380E263BEFD100E35754 /* SignUpViewController.swift in Sources */,
 				1AF1380C263BDFE100E35754 /* InputValidator.swift in Sources */,
+				1AF1381E263C18A800E35754 /* AccountViewController.swift in Sources */,
+				1AF13821263C18EA00E35754 /* OrderViewController.swift in Sources */,
+				1AF13815263C02F500E35754 /* StoreRootViewController.swift in Sources */,
+				1AF1381B263C188100E35754 /* MainViewController.swift in Sources */,
+				1AF13817263C184B00E35754 /* PreviewViewController.swift in Sources */,
 				1AF137D0263BC49F00E35754 /* AppDelegate.swift in Sources */,
 				1AF137D2263BC49F00E35754 /* SceneDelegate.swift in Sources */,
 				1AF13809263BDF2D00E35754 /* EntityModel.swift in Sources */,
 				1AF13807263BDAE500E35754 /* SignInViewController.swift in Sources */,
 				1AF13810263BF2C200E35754 /* SessionManager.swift in Sources */,
+				1AF13819263C186A00E35754 /* CategoryViewController.swift in Sources */,
+				1AF13812263BF93D00E35754 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
