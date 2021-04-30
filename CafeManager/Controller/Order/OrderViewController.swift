@@ -30,7 +30,7 @@ class OrderViewController: UIViewController {
     }
     
 
-    @IBAction func onSegChanged(_ sender: Any) {
+    @IBAction func onSegChanged(_ sender: UISegmentedControl) {
         filterOrders(status: sender.selectedSegmentIndex)
     }
 
@@ -85,7 +85,7 @@ extension OrderViewController {
                     }
                     
                     self.filteredOrders.append(contentsOf: self.orders)
-                    self.onSegChanged(self.segtabs)
+                    self.tblOrders.reloadData()
                 } else {
                     Loaf("No orders found", state: .error, sender: self).show()
                 }

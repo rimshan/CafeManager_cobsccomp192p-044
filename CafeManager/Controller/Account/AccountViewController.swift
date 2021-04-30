@@ -28,11 +28,13 @@ class AccountViewController: UIViewController {
     var orderList: [Order] = []
     var filteredOrders: [Order] = []
     
+    let sessionMGR = SessionManager()
+    
     var orderTotal: Double = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tblOrders.register(UINib(nibName: OrderSummaryTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: OrderSummaryTableViewCell.reuseIdentifier)
+        tblOrders.register(UINib(nibName: OrderSummeryTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: OrderSummeryTableViewCell.reuseIdentifier)
         // Do any additional setup after loading the view.
     }
     
@@ -44,6 +46,11 @@ class AccountViewController: UIViewController {
         txtTo.text = dateFormatter.string(from: Date())
     }
 
+    
+    @IBAction func onSignOutPressed(_ sender: UIButton) {
+        sessionMGR.clearUserLoggedState()
+    }
+    
 }
 
 
@@ -179,7 +186,7 @@ extension AccountViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tblOrders.dequeueReusableCell(withIdentifier: OrderSummaryTableViewCell.reuseIdentifier, for: indexPath) as! OrderSummaryTableViewCell
+        let cell = tblOrders.dequeueReusableCell(withIdentifier: OrderSummeryTableViewCell.reuseIdentifier, for: indexPath) as! OrderSummeryTableViewCell
         cell.selectionStyle = .none
         cell.configXIB(order: filteredOrders[indexPath.row])
         return cell

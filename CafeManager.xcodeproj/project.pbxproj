@@ -30,6 +30,7 @@
 		1AF1381E263C18A800E35754 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1381D263C18A800E35754 /* AccountViewController.swift */; };
 		1AF13821263C18EA00E35754 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF13820263C18EA00E35754 /* OrderViewController.swift */; };
 		4967163420EEA0E4A09DE0C5 /* Pods_CafeManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BEEB0EB9EEB28BD6818BEC /* Pods_CafeManager.framework */; };
+		569811DB263CA84900D4E6E8 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569811DA263CA84900D4E6E8 /* ImageFetcher.swift */; };
 		691727F2263C5FEC00B905FE /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691727F0263C5FEC00B905FE /* CategoryCollectionViewCell.swift */; };
 		691727F3263C5FEC00B905FE /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691727F1263C5FEC00B905FE /* CategoryCollectionViewCell.xib */; };
 		691727F9263C65B500B905FE /* FoodItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691727F7263C65B500B905FE /* FoodItemTableViewCell.swift */; };
@@ -89,6 +90,7 @@
 		1AF13818263C186900E35754 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		1AF1381D263C18A800E35754 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		1AF13820263C18EA00E35754 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		569811DA263CA84900D4E6E8 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 		575C0BD075E5AEFB64259337 /* Pods-CafeManager-CafeManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager-CafeManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-CafeManager-CafeManagerUITests/Pods-CafeManager-CafeManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		66193D7552DD60D7F8D49612 /* Pods-CafeManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-CafeManagerTests/Pods-CafeManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		671D19EC791AEDC8D2785AA3 /* Pods-CafeManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeManager.release.xcconfig"; path = "Target Support Files/Pods-CafeManager/Pods-CafeManager.release.xcconfig"; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			children = (
 				1AF1380B263BDFE100E35754 /* InputValidator.swift */,
 				1AF1380F263BF2C200E35754 /* SessionManager.swift */,
+				569811DA263CA84900D4E6E8 /* ImageFetcher.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				1AF137C8263BC49F00E35754 /* Sources */,
 				1AF137C9263BC49F00E35754 /* Frameworks */,
 				1AF137CA263BC49F00E35754 /* Resources */,
+				8D2135D611189E85C6A8C52F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -346,6 +350,7 @@
 				1AF137E9263BC4A600E35754 /* Sources */,
 				1AF137EA263BC4A600E35754 /* Frameworks */,
 				1AF137EB263BC4A600E35754 /* Resources */,
+				CF7BCA5F0C869C0E7AB1FDDB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -501,6 +506,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8D2135D611189E85C6A8C52F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeManager/Pods-CafeManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeManager/Pods-CafeManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CafeManager/Pods-CafeManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF7BCA5F0C869C0E7AB1FDDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeManager-CafeManagerUITests/Pods-CafeManager-CafeManagerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeManager-CafeManagerUITests/Pods-CafeManager-CafeManagerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CafeManager-CafeManagerUITests/Pods-CafeManager-CafeManagerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -517,6 +556,7 @@
 				111FB780263C500400731038 /* MenuViewController.swift in Sources */,
 				69172800263C71EA00B905FE /* OrderTableViewCell.swift in Sources */,
 				1AF13821263C18EA00E35754 /* OrderViewController.swift in Sources */,
+				569811DB263CA84900D4E6E8 /* ImageFetcher.swift in Sources */,
 				1AF13815263C02F500E35754 /* StoreRootViewController.swift in Sources */,
 				1AF13817263C184B00E35754 /* PreviewViewController.swift in Sources */,
 				1AF137D0263BC49F00E35754 /* AppDelegate.swift in Sources */,
@@ -703,6 +743,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CafeManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -723,6 +764,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CafeManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

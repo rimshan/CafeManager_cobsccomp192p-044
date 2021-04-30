@@ -117,9 +117,9 @@ extension PreviewViewController {
                                     isActive: foodInfo["isActive"] as! Bool))
                         }
                     }
-                    
                     self.filteredFood.append(contentsOf: self.foodItemList)
                     self.tblFoodItems.reloadData()
+                    
                 }
             })
     }

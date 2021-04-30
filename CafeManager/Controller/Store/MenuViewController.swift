@@ -18,6 +18,7 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var txtPrice: UITextField!
     @IBOutlet weak var txtFoodDescription: UITextField!
     
+    @IBOutlet weak var imgFood: UIImageView!
     let databaseReference = Database.database().reference()
     
     var categoryPicker = UIPickerView()
@@ -42,7 +43,7 @@ class MenuViewController: UIViewController {
         let foodItem = FoodItem(
                   foodItemID: "",
                   foodName: txtFoodName.text ?? "",
-                  foodDescription: txtDescription.text ?? "",
+                  foodDescription: txtFoodDescription.text ?? "",
                   foodPrice: Double(txtPrice.text ?? "") ?? 0,
                   discount: Int(txtDiscount.text ?? "") ?? 0,
                   foodImgRes: "",
@@ -150,7 +151,7 @@ extension MenuViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         let pickerToolBar = UIToolbar()
         pickerToolBar.sizeToFit()
         
-//        let doneAction = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(onValuePicked))
+        //let doneAction = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(onValuePicked))
         let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: nil, action: #selector(onPickerCancelled))
         let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         pickerToolBar.setItems([space, cancelButton], animated: true)

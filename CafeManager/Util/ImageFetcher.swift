@@ -2,7 +2,8 @@
 //  ImageFetcher.swift
 //  CafeManager
 //
-//  Created by Hishara Dilshan on 2021-04-29.
+//  Created by Rimshan on 4/30/21.
+//  Copyright © 2021 Rimshan. All rights reserved.
 //
 
 import UIKit

@@ -16,6 +16,7 @@ class FoodItemTableViewCell: UITableViewCell {
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var lblFoodName: UILabel!
     
+    @IBOutlet weak var imgFood: UIImageView!
     var delegate: FoodItemCellActions?
       var foodItem: FoodItem?
       
@@ -42,6 +43,7 @@ class FoodItemTableViewCell: UITableViewCell {
     }
     
     func configXIB(foodItem: FoodItem, index: Int) {
+
         lblFoodName.text = foodItem.foodName
         lblDescription.text = foodItem.foodDescription
         imgFood.kf.setImage(with: URL(string: foodItem.foodImgRes))

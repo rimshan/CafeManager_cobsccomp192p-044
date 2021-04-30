@@ -8,6 +8,13 @@
 
 import Foundation
 
+struct User {
+    var userName: String
+    var userEmail: String
+    var userPassword: String
+    var userPhone: String
+}
+
 struct Category {
     var categoryID: String
     var categoryName: String
