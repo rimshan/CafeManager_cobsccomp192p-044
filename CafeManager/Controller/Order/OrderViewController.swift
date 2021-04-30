@@ -12,6 +12,7 @@ import Loaf
 
 class OrderViewController: UIViewController {
     
+    @IBOutlet weak var segTabs: UISegmentedControl!
     var orders: [Order] = []
     var filteredOrders: [Order] = []
 

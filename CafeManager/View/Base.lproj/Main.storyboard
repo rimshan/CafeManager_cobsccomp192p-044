@@ -318,6 +318,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Order" id="bev-Fg-cp4"/>
                     <connections>
+                        <outlet property="segTabs" destination="plc-vc-cKe" id="6l0-lX-9Lg"/>
                         <outlet property="tblOrders" destination="B0W-xR-Anp" id="h5e-XC-iAg"/>
                     </connections>
                 </viewController>
